@@ -226,7 +226,7 @@ int main()
                         }
                     }
                     
-                    if (bond_position[0][0] < chain_length - bond_position[bond_count - 1][0] - 1)
+                    if (bond_position[0][0] < chain_length - bond_position[bond_count - 1][0])
                     {
                         L2:for (short i = 0; i < bond_count - 1; i++)
                         {
@@ -240,7 +240,7 @@ int main()
                         }
                         std::cout << "ϩ\n";
                     }
-                    else if (bond_position[0][0] > chain_length - bond_position[bond_count - 1][0] - 1)
+                    else if (bond_position[0][0] > chain_length - bond_position[bond_count - 1][0])
                     {
                         R2:for (short i = bond_count - 1; i > 0; i--)
                         {
@@ -292,7 +292,7 @@ int main()
                         }
                     }
 
-                    if (bond_position[0][0] < chain_length - bond_position[bond_count - 1][0] - 1)
+                    if (bond_position[0][0] < chain_length - bond_position[bond_count - 1][0])
                     {
                         L3:for (short i = 0; i < bond_count - 1; i++)
                         {
@@ -306,7 +306,7 @@ int main()
                         }
                         std::cout << "Ȳ\n";
                     }
-                    else if (bond_position[0][0] > chain_length - bond_position[bond_count - 1][0] - 1)
+                    else if (bond_position[0][0] > chain_length - bond_position[bond_count - 1][0])
                     {
                         R3:for (short i = bond_count - 1; i > 0; i--)
                         {
@@ -350,7 +350,7 @@ int main()
                     }
                 }
 
-                if (bond_position[0][0] < chain_length - bond_position[bond_count - 1][0] - 1)
+                if (bond_position[0][0] < chain_length - bond_position[bond_count - 1][0])
                 {
                 L23:for (short i = 0; i < bond_count - 1; i++)
                 {
@@ -394,7 +394,7 @@ int main()
                 std::cout << "Ȳ\n";
 
                 }
-                else if (bond_position[0][0] > chain_length - bond_position[bond_count - 1][0] - 1)
+                else if (bond_position[0][0] > chain_length - bond_position[bond_count - 1][0])
                 {
                 R23:for (short i = bond_count - 1; i > 0; i--)
                 {
