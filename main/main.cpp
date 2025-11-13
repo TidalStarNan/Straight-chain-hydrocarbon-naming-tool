@@ -36,13 +36,9 @@ int main()
 
         for (short i = 0; i < chain_length * 2 - 1; i++)
         {
-            if (position[i][1] == 1)
+            if (position[i][1] == 2)
             {
-                std::cout << "□";
-            }
-            else if (position[i][1] == 2)
-            {
-                std::cout << "■";
+                std::cout << "\033[47m口\033[0m";
             }
             else if (position[i][1] == -1)
             {
@@ -103,6 +99,7 @@ int main()
             else
             {
 				std::cout << "碳链长度已达上限50，无法继续延长\n";
+                Sleep(500);
             }
             break;
         case 'x':
@@ -116,6 +113,7 @@ int main()
             else
             {
 				std::cout << "碳链长度已达下限1，无法继续缩短\n";
+                Sleep(500);
             }
             if (pointer > chain_length * 2 - 2)
             {
@@ -456,7 +454,7 @@ int main()
                 }
             }
 
-			std::cout << "\n按任意键继续...";
+			std::cout << "\n按任意键继续……";
 			key = _getch();
 			break;
         case 27:
